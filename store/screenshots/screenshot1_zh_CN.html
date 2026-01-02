@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Screenshot 1 - Simplified Chinese</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #f0f0f0;
+    }
+    .screenshot {
+      width: 1280px;
+      height: 800px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      overflow: hidden;
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      padding: 50px 40px 30px;
+      color: white;
+    }
+    .header h1 {
+      font-size: 52px;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .header p {
+      font-size: 24px;
+      opacity: 0.95;
+    }
+    .demo-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 30px 60px;
+    }
+    .demo-box {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      width: 520px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    }
+    .demo-box h2 {
+      font-size: 22px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .demo-box.before h2 { color: #e74c3c; }
+    .demo-box.after h2 { color: #27ae60; }
+    .chat-window {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 18px;
+      min-height: 200px;
+    }
+    .message {
+      background: #e3f2fd;
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      max-width: 85%;
+      font-size: 15px;
+    }
+    .message.sent {
+      background: #4A90D9;
+      color: white;
+      margin-left: auto;
+    }
+    .message.error {
+      background: #ffebee;
+      color: #c62828;
+      border: 1px solid #ef9a9a;
+    }
+    .message small {
+      opacity: 0.8;
+      font-size: 12px;
+    }
+    .key-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #333;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+    .key {
+      background: #555;
+      padding: 4px 14px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .result-icon {
+      font-size: 44px;
+      text-align: center;
+      margin-top: 16px;
+    }
+    .feature-list {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 35px;
+      color: white;
+    }
+    .feature {
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 17px;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+  <div class="screenshot">
+    <div class="header">
+      <h1>IME Enter Guard</h1>
+      <p>防止输入法确认时意外发送消息</p>
+    </div>
+
+    <div class="demo-container">
+      <div class="demo-box before">
+        <h2><span style="font-size: 26px;">❌</span> 之前（没有扩展）</h2>
+        <div class="chat-window">
+          <div class="message">你好！</div>
+          <div class="message sent error">
+            今天的会议是<br>
+            <small>↑ 按Enter确认时意外发送...</small>
+          </div>
+        </div>
+        <div class="key-indicator">
+          <span>输入法转换中</span>
+          <span class="key">Enter</span>
+          <span>→ 消息被发送</span>
+        </div>
+        <div class="result-icon">😱</div>
+      </div>
+
+      <div class="demo-box after">
+        <h2><span style="font-size: 26px;">✅</span> 之后（安装扩展）</h2>
+        <div class="chat-window">
+          <div class="message">你好！</div>
+          <div class="message sent">
+            今天的会议是下午3点。<br>
+            期待与您见面！
+          </div>
+        </div>
+        <div class="key-indicator">
+          <span>输入法转换中</span>
+          <span class="key">Enter</span>
+          <span>→ 仅确认文字</span>
+        </div>
+        <div class="result-icon">😊</div>
+      </div>
+    </div>
+
+    <div class="feature-list">
+      <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <p>所有网站自动生效</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <p>无需配置</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <p>保护隐私</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

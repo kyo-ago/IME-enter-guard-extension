@@ -1,0 +1,10 @@
+{
+  "name": "screenshot-capture",
+  "private": true,
+  "scripts": {
+    "capture": "node capture.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.40.0"
+  }
+}

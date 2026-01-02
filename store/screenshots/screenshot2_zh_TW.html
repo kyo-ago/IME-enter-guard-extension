@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Screenshot 2 - Traditional Chinese</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background: #f0f0f0;
+    }
+    .screenshot {
+      width: 1280px;
+      height: 800px;
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      overflow: hidden;
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      padding: 50px 40px 40px;
+      color: white;
+    }
+    .header h1 {
+      font-size: 52px;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .header p {
+      font-size: 24px;
+      opacity: 0.95;
+    }
+    .how-it-works {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      padding: 20px 50px;
+    }
+    .step-box {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 25px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .step-number {
+      background: #11998e;
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 auto 18px;
+    }
+    .step-box h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    .step-box p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.7;
+    }
+    .step-icon {
+      font-size: 42px;
+      margin-top: 18px;
+    }
+    .arrow {
+      font-size: 36px;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .extension-badge {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      padding: 20px 35px;
+      border-radius: 16px;
+      margin: 35px auto 0;
+      width: fit-content;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    }
+    .extension-badge svg {
+      width: 56px;
+      height: 56px;
+    }
+    .extension-badge .info h3 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    .extension-badge .info p {
+      color: #666;
+      font-size: 14px;
+    }
+    .lang-list {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 40px;
+      color: white;
+    }
+    .lang {
+      text-align: center;
+    }
+    .lang-icon {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+    .lang p {
+      font-size: 16px;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+  <div class="screenshot">
+    <div class="header">
+      <h1>運作原理</h1>
+      <p>簡單機制，可靠保護</p>
+    </div>
+
+    <div class="how-it-works">
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <h3>偵測輸入法</h3>
+        <p>自動偵測日語、中文、<br>韓語等輸入法輸入</p>
+        <div class="step-icon">🔍</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <h3>監控Enter鍵</h3>
+        <p>在組字狀態下即時<br>捕獲Enter鍵按下</p>
+        <div class="step-icon">⌨️</div>
+      </div>
+
+      <div class="arrow">→</div>
+
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <h3>阻止提交</h3>
+        <p>停止提交事件傳播<br>防止意外發送</p>
+        <div class="step-icon">🛡️</div>
+      </div>
+    </div>
+
+    <div class="extension-badge">
+      <svg viewBox="0 0 128 128">
+        <defs>
+          <linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#4A90D9"/>
+            <stop offset="100%" style="stop-color:#2E5B8A"/>
+          </linearGradient>
+          <linearGradient id="kg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFFFFF"/>
+            <stop offset="100%" style="stop-color:#E8E8E8"/>
+          </linearGradient>
+        </defs>
+        <path d="M64 8 L112 28 L112 60 C112 90 88 112 64 120 C40 112 16 90 16 60 L16 28 Z" fill="url(#sg)" stroke="#1E3A5F" stroke-width="2"/>
+        <rect x="32" y="42" width="64" height="44" rx="6" fill="url(#kg)" stroke="#CCC"/>
+        <path d="M76 54 L76 64 L52 64 L52 58 L44 66 L52 74 L52 68 L80 68 L80 54 Z" fill="#2E5B8A"/>
+        <circle cx="88" cy="92" r="14" fill="#4CAF50" stroke="#2E7D32"/>
+        <path d="M81 92 L86 97 L95 86" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div class="info">
+        <h3>IME Enter Guard</h3>
+        <p>Chrome 線上應用程式商店免費下載</p>
+      </div>
+    </div>
+
+    <div class="lang-list">
+      <div class="lang">
+        <div class="lang-icon">🇯🇵</div>
+        <p>日本語</p>
+      </div>
+      <div class="lang">
+        <div class="lang-icon">🇨🇳</div>
+        <p>中文</p>
+      </div>
+      <div class="lang">
+        <div class="lang-icon">🇹🇼</div>
+        <p>繁體中文</p>
+      </div>
+      <div class="lang">
+        <div class="lang-icon">🇰🇷</div>
+        <p>한국어</p>
+      </div>
+      <div class="lang">
+        <div class="lang-icon">🇺🇸</div>
+        <p>English</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
